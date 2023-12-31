@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "San Francisco";
+    font-weight: bold;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+  }
+@font-face {
+    font-family: "San Francisco Regular";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+  }
+
+
+main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--col_bg);
+    padding: 150px 0px 50px 0px;
+    height: calc(100vh - 200px);
+}
+
+.hero .title {
+    font-family: 'San Francisco', sans-serif;
+    font-size: var(--size_text_large);
+    padding: 0;
+    margin: 0;
+    line-height: 50px;
+}
+
+.hero .sub-title {
+    font-family: 'San Francisco Regular', sans-serif;
+    font-size: var(--size_text_medium);
+    padding: 0;
+    margin: 0;
+    line-height: 50px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* STACK */
+
+
+.stack {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(100vh - 40px);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.stack-main {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10%;
+}
+
+.stack .text-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    height: 100%;
+    width: 100%;
+}
+
+
+.stack .title {
+    font-family: 'San Francisco Regular', sans-serif;
+    font-size: var(--size_text_large);
+    padding: 0;
+    margin: 0;
+    line-height: 50px;
+}
+
+.stack .sub-title {
+    font-family: 'San Francisco Regular', sans-serif;
+    font-size: var(--size_text_medium);
+    padding: 0;
+    margin: 0;
+    line-height: 50px;
+}
+
+.stack .list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}

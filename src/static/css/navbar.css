@@ -1,0 +1,39 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--col_border);
+    padding: 14px var(--size_margin);
+    background-color: var(--col_bg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo {
+    max-width: 50px;
+}
+
+.logo-button {
+    background-color: transparent;
+    border: 0px solid transparent;
+    cursor: pointer;
+    transition: .2s ease;
+}
+.logo-button:hover {
+    scale: 1.03;
+}
+
+.logo-button:active {
+    scale: 1;
+}
