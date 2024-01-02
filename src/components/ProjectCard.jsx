@@ -6,7 +6,7 @@ import images from "../utils/images";
 
 
 function ProjectCard({image_path, title, description, visit_link, github_link}) {
-    console.log(github_link)
+
     return (
         <article className="project-card">
             <div className="project-top">

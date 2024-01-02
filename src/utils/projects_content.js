@@ -1,5 +1,6 @@
+import images from "./images"
 
-export default projects_list = [
+const projects_list = [
 	{
 		title: 'Cash Converter Bot',
 		description: 'Telegram bot that allows you to count how much money do you have, that distributed in different currencies.',
@@ -43,3 +44,5 @@ export default projects_list = [
 		github_link: null,
 	},
 ]
+
+export default projects_list;
