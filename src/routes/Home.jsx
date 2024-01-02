@@ -1,19 +1,13 @@
 import React from 'react'
 
 import Button from '../components/Button'
+import ProjectCard from '../components/ProjectCard'
 
 import '../static/css/home.css'
+import images from '../utils/images'
 
-import js_png from '../static/images/js.png'
-import react_png from '../static/images/react.png'
-import python_png from '../static/images/python.png'
-import go_png from '../static/images/go.png'
-import my_photo_png from '../static/images/my_photo.png'
-
-import currency_bot_jpeg from '../static/images/currency_bot.jpeg'
-import bitrage_bot_jpeg from '../static/images/bitrage_bot.jpeg'
-
-import ProjectCard from '../components/ProjectCard'
+import projects_content from '../utils/projects_content'
+import stack_info from '../utils/stack_info'
 
 
 function Home() {
@@ -37,9 +31,9 @@ function Hero() {
 			<h1 className='title'>MAKSIM MERKULOV</h1>
 			<h4 className='sub-title'>FULL STACK DEVELOPER</h4>
 			<div className='buttons'>
-				<Button text='JavaScript' image_path={js_png} />
-				<Button text='Python' image_path={python_png} />
-				<Button text='Golang' image_path={go_png} />
+				<Button text='JavaScript' image_path={images.js_png} />
+				<Button text='Python' image_path={images.python_png} />
+				<Button text='Golang' image_path={images.go_png} />
 			</div>
 		</section>
 	)
@@ -48,16 +42,12 @@ function Hero() {
 
 
 // STACK BLOCK
-const stack_info = [
-	{ title: 'Front End', stack: ['React.js', 'Redux', 'CSS3', 'HTML5', 'Figma', 'Bootsrap'] },
-	{ title: 'Back End', stack: ['Flask', 'Aiogram', 'Express.js', 'TronWeb', 'Prisma ORM', 'SQLAlchemy', 'PostgreSQL', 'MongoDB', 'SQLite'] },
-	{ title: 'Deployment', stack: ['NGINX', 'Gunicorn', 'UWSGI', 'Linux', 'Bash', 'GIT', 'AWS (EC2, RDS)', 'Heroku', 'Yandex.Cloud'] },
-]
+
 function Stack() {
 	return (
 		<section className='stack grid-item'>
 			<div className='stack-main'>
-				<img className='photo' src={my_photo_png}></img>
+				<img className='photo' src={images.my_photo_png}></img>
 				<div className='text-bar'>
 					<p className='title'>Stack</p>
 					<br />
@@ -83,38 +73,6 @@ function StackList({ stack_item }) {
 	})
 }
 
-const projects_list = [
-	{
-		title: 'Cash Converter Bot',
-		description: 'Telegram bot that allows you to count how much money do you have, that distributed in different currencies.',
-		image_path: currency_bot_jpeg
-	},
-	{
-		title: 'Bit Rage VPN Bot',
-		description: 'Telegram bot that allows you to buy subscription to private VPN server.',
-		image_path: bitrage_bot_jpeg
-	},
-	{
-		title: 'Express/React Example',
-		description: 'This project contains server and client. Showcase of fullstack application.',
-		image_path: 'none'
-	},
-	{
-		title: 'Express/PReact Chat',
-		description: 'This project contains server and client. Showcase of fullstack application that uses websockets.',
-		image_path: 'none'
-	},
-	{
-		title: 'React Native Job Application',
-		description: 'Showcase of React Native application. Built following YouTube tutortial.',
-		image_path: 'none'
-	},
-	{
-		title: 'This website',
-		description: 'Showcase of React Native application. Built following YouTube tutortial.',
-		image_path: 'none'
-	},
-]
 
 // PROJECTS BLOCK
 function Projects() {
@@ -122,11 +80,14 @@ function Projects() {
 		<section className='projects grid-item-whole'>
 			<p className='title'>My Projects</p>
 			<div className='scrollable'>
-				{projects_list.map((project) => (
+				{projects_content.map((project) => (
 					<ProjectCard
+						key={project.title}
 						title={project.title}
 						description={project.description}
 						image_path={project.image_path}
+						visit_link={project.visit_link}
+						github_link={project.github_link}
 					/>
 				))}
 			</div>
