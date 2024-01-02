@@ -16,8 +16,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-    overflow: scroll;
+
 }
 
 .hero {
@@ -25,9 +24,10 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--col_bg);
+
     padding: 150px 0px 50px 0px;
     height: calc(100vh - 200px);
+    /* background-color: red; */
 }
 
 .hero .title {
@@ -36,6 +36,7 @@ main {
     padding: 0;
     margin: 0;
     line-height: 50px;
+
 }
 
 .hero .sub-title {
@@ -67,9 +68,8 @@ main {
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    height: calc(100vh - 40px);
-    padding-bottom: 20px;
-    padding-top: 20px;
+    height: calc(100vh - 80px);
+    /* background-color: blue; */
 }
 
 .stack-main {
@@ -86,7 +86,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-start;
+
+    row-gap: 40px;
 
     height: 100%;
     width: 100%;
@@ -112,5 +114,55 @@ main {
 .stack .list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 20px;
+    margin-top: 10px;
+
 }
+
+.stack .list p {
+    margin: 0;
+    line-height: 14px;
+}
+
+.stack-item {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* PROJECTS */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    height: calc(100vh - 160px);
+    /* border-top: 2px solid var(--col_border_transparent); */
+    /* background-color: green; */
+
+}
+
+.projects .title {
+    font-size: var(--size_text_large);
+    font-weight: 400;
+    margin: 0;
+}
+
+.projects .scrollable {
+    width: 100%;
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    overflow: scroll;
+    gap: 20px;
+
+}
+.projects .scrollable::-webkit-scrollbar {
+    display: none;
+  }

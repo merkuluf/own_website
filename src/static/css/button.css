@@ -9,6 +9,7 @@
     margin: 0;
     border-radius: 8px;
     border: 2px solid var(--col_btn_border);
+    color: var(--col_text);
     font-family: 'Geologica', sans-serif;
     line-height: 18px;
     font-size: var(--size_text_small);

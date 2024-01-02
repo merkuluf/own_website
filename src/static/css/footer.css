@@ -1,9 +1,14 @@
 footer {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     border-top: 2px solid var(--col_border);
     padding: 14px var(--size_margin);
     background-color: var(--col_bg);
+}
+
+footer .footer-text {
+    margin: 0;
+
 }
