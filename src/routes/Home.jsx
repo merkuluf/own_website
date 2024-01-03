@@ -80,6 +80,7 @@ function Projects() {
 		<section className='projects grid-item-whole'>
 			<p className='title'>My Projects</p>
 			<div className='scrollable'>
+				<div className='blank'></div>
 				{projects_content.map((project) => (
 					<ProjectCard
 						key={project.title}
@@ -90,6 +91,7 @@ function Projects() {
 						github_link={project.github_link}
 					/>
 				))}
+				<div className='blank'></div>
 			</div>
 		</section>
 	)

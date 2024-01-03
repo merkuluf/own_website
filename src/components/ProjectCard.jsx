@@ -3,9 +3,12 @@ import '../static/css/project-card.css'
 import Button from "./Button";
 import images from "../utils/images";
 
+import useRedirect from '../hooks/useRedirect'
 
 
 function ProjectCard({image_path, title, description, visit_link, github_link}) {
+
+    const redirect = useRedirect()
 
     return (
         <article className="project-card">
@@ -17,8 +20,8 @@ function ProjectCard({image_path, title, description, visit_link, github_link}) 
                 <p className="project-description">{description}</p>
             </div>
             <div className="project-buttons">
-                {visit_link !== null && <Button text="See" image_path={images.share_png} />}
-                {github_link !== null && <Button text="Code" image_path={images.git_png} />}
+                {visit_link !== null && <Button onClick={() => redirect(visit_link)} text="See" image_path={images.eye_png} />}
+                {github_link !== null && <Button onClick={() => redirect(github_link)} text="Code" image_path={images.git_png} />}
             </div>
         </article>
     )

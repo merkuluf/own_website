@@ -15,7 +15,7 @@ import m_png from '../static/images/m.png'
 import app_png from '../static/images/app.png'
 import git_png from '../static/images/git.png'
 import share_png from '../static/images/share.png'
-
+import eye_png from '../static/images/eye.png'
 
 
 
@@ -37,4 +37,5 @@ export default {
     app_png,
     git_png,
     share_png,
+    eye_png,
 }
