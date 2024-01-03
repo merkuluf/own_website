@@ -12,12 +12,14 @@ function Footer() {
     return (
         <footer>
             <Button 
+                className="mobile-notext"
                 image_path={images.tg_png} 
                 text="Telegram" 
                 onClick={() => redirect("https://t.me/merkuluf")}
             />
             <p className='footer-text'>Programming since 2022</p>
-            <Button 
+            <Button
+                className="mobile-notext" 
                 image_path={images.linkedin_png} 
                 text="Linked In" 
                 onClick={() => redirect("https://www.linkedin.com/in/maksim-merkulov-a6141b209/")}

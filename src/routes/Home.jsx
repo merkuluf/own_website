@@ -31,9 +31,9 @@ function Hero() {
 			<h1 className='title'>MAKSIM MERKULOV</h1>
 			<h4 className='sub-title'>FULL STACK DEVELOPER</h4>
 			<div className='buttons'>
-				<Button text='JavaScript' image_path={images.js_png} />
-				<Button text='Python' image_path={images.python_png} />
-				<Button text='Golang' image_path={images.go_png} />
+				<Button className="mobile-notext" text='JavaScript' image_path={images.js_png} />
+				<Button className="mobile-notext" text='Python' image_path={images.python_png} />
+				<Button className="mobile-notext" text='Golang' image_path={images.go_png} />
 			</div>
 		</section>
 	)
