@@ -38,6 +38,7 @@ main {
         padding: 0;
         margin: 0;
         line-height: 50px;
+        
     
     }
     
@@ -80,7 +81,8 @@ main {
         padding: 0;
         margin: 0;
         line-height: 50px;
-    
+        width: 100%;
+        text-align: center;
     }
     
     .hero .sub-title {
@@ -260,6 +262,25 @@ main {
 
 /* PROJECTS */
 
+@media screen and (max-width: 768px) {
+    .projects .title {
+        font-size: var(--size_text_medium);
+        font-weight: 400;
+        margin: 0;
+    }
+    
+}
+
+@media screen and (min-width: 769px) {
+    .projects .title {
+        font-size: var(--size_text_large);
+        font-weight: 400;
+        margin: 0;
+    }
+    
+}
+
+
 .projects {
     display: flex;
     flex-direction: column;
@@ -277,11 +298,6 @@ main {
 
 }
 
-.projects .title {
-    font-size: var(--size_text_large);
-    font-weight: 400;
-    margin: 0;
-}
 
 .projects .scrollable {
     width: 100%;
